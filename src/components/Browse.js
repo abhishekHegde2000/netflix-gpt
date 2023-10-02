@@ -1,24 +1,10 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Login from "./Login";
-const Browse = ()=>{
-    // create a approuter for providing path
+import Header from "./Header";
 
-    const appRouter  = createBrowserRouter(
-        [
-            {
-            path: '/',
-            element: <Login />
-        },
-            {
-                path: '/browse',
-                element: <Browse />
-            },
-        ]
-    )
-    return(
-        <div>
-            <RouterProvider router={appRouter}/>
-        </div>
-    )
-}
+const Browse = () => {
+  return (
+    <div>
+      <Header />
+    </div>
+  );
+};
 export default Browse;
