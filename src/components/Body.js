@@ -1,7 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
-import Browse from "./Browse";
+import React from "react";
 import Login from "./Login";
-import { RouterProvider } from "react-router-dom";
+import Browse from "./Browse";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import GPTmain from "./gpt/GPTmain";
+import Watch from "./watch/Watch";
+import Info from "./info/Info";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -13,6 +16,18 @@ const Body = () => {
       path: "/browse",
       element: <Browse />,
     },
+    {
+      path: "/gpt",
+      element: <GPTmain />,
+    },
+    {
+      path: "/watch/:waid",
+      element: <Watch />,
+    },
+    {
+      path: "/info/:infoid",
+      element: <Info />,
+    },
   ]);
 
   return (
@@ -21,4 +36,5 @@ const Body = () => {
     </div>
   );
 };
+
 export default Body;
