@@ -1,14 +1,10 @@
-# Features
-- Login/Sign Up
-    - Sign In /Sign up Form
-    - redirect to Browse Page
-- Browse (after authentication)
-    - Header
-    - Main Movie
-        - Tailer in Background
-        - Title & Description
-        - MovieSuggestions
-            - MovieLists * N 
-- NetflixGPT
-    - Search Bar
-    - Movie Suggestions
+# Netflix GPT
+
+[deployed link](https://netflix-gpt-ai.web.app)
+
+Be aware extensive use of Redux
+
+    - Browse page( landing page. TMDB api used here ) 
+    - info page ( specific movie page. )
+    - watch page ( includes videos specific to a movie. Youtube API used Here )
+    - GPT page( it recomends movies specific to your prompt. GPT api used here ) 
