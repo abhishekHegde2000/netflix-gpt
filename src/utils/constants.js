@@ -1,19 +1,25 @@
-export const Logo =
-  "https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png";
-
-export const MOVIE_LOGO_URL = "https://image.tmdb.org/t/p/original"
-
 export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer " + process.env.REACT_APP_TMDB_KEY,
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NGE0YTliMWM0NjI3MGM4ZWIyZDYxNmJjODFhZmQ4YiIsInN1YiI6IjY1MWFkMTliMjIzYThiMDBhYjNjOWJiYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4t2h76baTGQlvh1bp6E98x0UoEpJAvjDCQ5QUadDcvw",
   },
 };
 
-export const POSTER_URL = "https://image.tmdb.org/t/p/w500/"
+export const IMG_CDN = "https://image.tmdb.org/t/p/w500/";
 
-export const IMAGE_URL = "https://image.tmdb.org/t/p/original/"
-
-export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+export const SUPPORTED_LANGUAGES = [
+  {
+    identifier: "1",
+    name: "English",
+  },
+  {
+    identifier: "2",
+    name: "Hindi",
+  },
+  {
+    identifier: "3",
+    name: "Spanish",
+  },
+];

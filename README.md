@@ -1,10 +1,8 @@
-# Netflix GPT
+# React + Vite
 
-[deployed link](https://netflix-gpt-ai.web.app)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Be aware extensive use of Redux
+Currently, two official plugins are available:
 
-    - Browse page( landing page. TMDB api used here ) 
-    - info page ( specific movie page. )
-    - watch page ( includes videos specific to a movie. Youtube API used Here )
-    - GPT page( it recomends movies specific to your prompt. GPT api used here ) 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
