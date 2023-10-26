@@ -1,25 +1,21 @@
-export const API_OPTIONS = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NGE0YTliMWM0NjI3MGM4ZWIyZDYxNmJjODFhZmQ4YiIsInN1YiI6IjY1MWFkMTliMjIzYThiMDBhYjNjOWJiYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.4t2h76baTGQlvh1bp6E98x0UoEpJAvjDCQ5QUadDcvw",
-  },
-};
+export const BASE_URL = import.meta.env.VITE_REACT_APP_BASE_URL;
+export const LOGO_ICON = `${BASE_URL}/netflix-gpt.png`;
+export const LOGO_RED = `${BASE_URL}/ngpt-red-300x71-01.png`;
+export const LOGO_WHITE = `${BASE_URL}/ngpt-white-300x71.png`;
+export const POSTER_BG = `${BASE_URL}/poster-bg.jpeg`;
+export const NO_POSTER = `${BASE_URL}/no_movie_poster.png`;
+export const BACKDROP = `${BASE_URL}/blur.png`;
+export const AVATAR_RED = "avatar-red.jpeg";
+export const AVATAR_BLUE = "avatar-blue.jpeg";
 
-export const IMG_CDN = "https://image.tmdb.org/t/p/w500/";
 
-export const SUPPORTED_LANGUAGES = [
-  {
-    identifier: "1",
-    name: "English",
-  },
-  {
-    identifier: "2",
-    name: "Hindi",
-  },
-  {
-    identifier: "3",
-    name: "Spanish",
-  },
-];
+export const SCREENSHOT = {
+  "landing": `${BASE_URL}/screenshot/01-Landing.png`,
+  "signin": `${BASE_URL}/screenshot/02-Signin.png`,
+  "signup": `${BASE_URL}/screenshot/03-Signup.png`,
+  "browse": `${BASE_URL}/screenshot/04-Browse.png`,
+  "movieList": `${BASE_URL}/screenshot/05-Movie-List.png`,
+  "shimmer": `${BASE_URL}/screenshot/06-Shimmer-loading.png`,
+  "search": `${BASE_URL}/screenshot/07-Search.png`,
+  "watch": `${BASE_URL}/screenshot/08-Watch.png`,
+}
