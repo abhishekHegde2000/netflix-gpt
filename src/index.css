@@ -2,201 +2,199 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    html {
-      scroll-behavior: smooth;
-    }
-  
-    @media only screen and (max-device-width: 480px) and (orientation: portrait),
-    only screen and (max-device-width: 568px) and (orientation: landscape),
-    only screen and (max-device-width: 768px) and (orientation: portrait),
-    only screen and (max-device-width: 1024px) and (orientation: landscape) {}
-  
-    body {
-      @apply bg-[#141414] text-white;
-      position: relative;
-    }
-  
-    .dark-nav {
-      @apply bg-[#141414] transition-colors;
-    }
-  
-    .navbar {
-      transition: 0.5s;
-    }
-  
-    .gradient-nav {
-      @apply bg-gradient-to-b from-black transition-colors;
-    }
-  
-    h1 {
-      @apply text-2xl;
-    }
-  
-    h2 {
-      @apply text-xl;
-    }
-  
-    .bg-shimmer {
-      /* @apply bg-slate-700; */
-      animation-duration: 3.6s;
-      animation-iteration-count: infinite;
-      animation-name: shimmerAnimation;
-      animation-timing-function: ease-in-out;
-    }
-  
-    .bg-shimmer-wave {
-      animation-duration: 3.6s;
-      @apply bg-[#141414];
-      -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-      mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
-      -webkit-mask-size: 200% 100%;
-      mask-size: 200% 100%;
-      -webkit-animation: placeholder-wave 2s linear infinite;
-      animation: shimmerAnimation-wave 2s linear infinite;
-    }
-  
-    @keyframes shimmerAnimation-wave {
-      100% {
-        mask-position: -200% 0%;
-      }
-    }
-  
-    @keyframes shimmerAnimation {
-      0% {
-        background-color: #1a1a1a;
-      }
-  
-      25% {
-        background-color: #333;
-      }
-  
-      50% {
-        background-color: #1a1a1a;
-      }
-  
-      100% {
-        background-color: #1a1a1a;
-      }
-    }
-  
-    .trending-card {
-      transition: 0.3s;
-    }
-  
-    .trending-card:hover {
-      /* transform: scale(1.2); */
-    }
-  
-    .moview-by-type {
-      background: linear-gradient(0deg, #141414 80%, transparent 100%);
-    }
-  
-    .trending-number {
-      -webkit-text-stroke: 4px rgb(89, 89, 89);
-      font-weight: bold;
-      font-family: sans-serif;
-      color: #000;
-      line-height: 200px;
-    }
-  
-    .movie-hovered {
-      display: none;
-    }
-  
-    .movie-hovered.hovered {
-      display: block;
-    }
-  
-    .hover-container {
-      opacity: 1;
-      transform: scale(0.8);
-      transition: opacity 0.1s ease-in, transform 0.2s ease-in;
-    }
-  
-    .movie-hovered.hovered:hover {
-      transition: 1s;
-    }
-  
-    .movie-hovered.hovered:hover .hover-container {
-      transform: scale(1);
-      opacity: 1;
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media only screen and (max-device-width: 480px) and (orientation: portrait),
+  only screen and (max-device-width: 568px) and (orientation: landscape),
+  only screen and (max-device-width: 768px) and (orientation: portrait),
+  only screen and (max-device-width: 1024px) and (orientation: landscape) {}
+
+  body {
+    @apply bg-[#141414] text-white;
+    position: relative;
+  }
+
+  .dark-nav {
+    @apply bg-[#141414] transition-colors;
+  }
+
+  .navbar {
+    transition: 0.5s;
+  }
+
+  .gradient-nav {
+    @apply bg-gradient-to-b from-black transition-colors;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  .bg-shimmer {
+    /* @apply bg-slate-700; */
+    animation-duration: 3.6s;
+    animation-iteration-count: infinite;
+    animation-name: shimmerAnimation;
+    animation-timing-function: ease-in-out;
+  }
+
+  .bg-shimmer-wave {
+    animation-duration: 3.6s;
+    @apply bg-[#141414];
+    -webkit-mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+    mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
+    -webkit-mask-size: 200% 100%;
+    mask-size: 200% 100%;
+    -webkit-animation: placeholder-wave 2s linear infinite;
+    animation: shimmerAnimation-wave 2s linear infinite;
+  }
+
+  @keyframes shimmerAnimation-wave {
+    100% {
+      mask-position: -200% 0%;
     }
   }
-  
-  @layer components {
-    .bg-red-primary {
-      @apply bg-[#e50914];
+
+  @keyframes shimmerAnimation {
+    0% {
+      background-color: #1a1a1a;
     }
-  
-    .text-red-primary {
-      @apply text-[#e50914];
+
+    25% {
+      background-color: #333;
     }
-  
-    .btn-blue {
-      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+
+    50% {
+      background-color: #1a1a1a;
+    }
+
+    100% {
+      background-color: #1a1a1a;
     }
   }
-  
-  :root {
-    --swiper-navigation-size: 32px;
+
+  .trending-card {
+    transition: 0.3s;
   }
-  
+
+  .trending-card:hover {
+    /* transform: scale(1.2); */
+  }
+
+  .moview-by-type {
+    background: linear-gradient(0deg, #141414 80%, transparent 100%);
+  }
+
+  .trending-number {
+    -webkit-text-stroke: 4px rgb(89, 89, 89);
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #000;
+    line-height: 200px;
+  }
+
+  .movie-hovered {
+    display: none;
+  }
+
+  .movie-hovered.hovered {
+    display: block;
+  }
+
+  .hover-container {
+    opacity: 1;
+    transform: scale(0.8);
+    transition: opacity 0.1s ease-in, transform 0.2s ease-in;
+  }
+
+  .movie-hovered.hovered:hover {
+    transition: 1s;
+  }
+
+  .movie-hovered.hovered:hover .hover-container {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@layer components {
+  .bg-red-primary {
+    @apply bg-[#e50914];
+  }
+
+  .text-red-primary {
+    @apply text-[#e50914];
+  }
+
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+:root {
+  --swiper-navigation-size: 32px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  color: #fff;
+  width: 72px;
+  height: 100%;
+  top: 0;
+  margin-top: 0;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+.swiper-button-disabled {
+  display: none;
+}
+
+.swiper:hover .swiper-button-prev:not(.swiper-button-disabled),
+.swiper:hover .swiper-button-next:not(.swiper-button-disabled) {
+  display: flex;
+}
+
+
+
+.swiper-button-prev {
+  left: 0;
+  background: linear-gradient(90deg, rgb(17, 17, 17), transparent);
+}
+
+.swiper-button-prev:hover {
+  left: 0;
+  background: linear-gradient(90deg, black, transparent);
+}
+
+.swiper-button-next {
+  right: 0;
+  background: linear-gradient(270deg, rgb(17, 17, 17), transparent);
+}
+
+.swiper-button-next:hover {
+  right: 0;
+  background: linear-gradient(270deg, black, transparent);
+}
+
+
+@media (max-width: 767px) {
+
   .swiper-button-prev,
   .swiper-button-next {
-    display: none;
-    color: #fff;
-    width: 72px;
-    height: 100%;
-    top: 0;
-    margin-top: 0;
+    display: none !important;
+    opacity: 0;
   }
-  
-  .swiper-button-prev:hover::after,
-  .swiper-button-next:hover::after {
-    transition: 0.3s;
-    transform: scale(1.2);
-  }
-  
-  .swiper-button-disabled {
-    display: none;
-  }
-  
-  .swiper:hover .swiper-button-prev:not(.swiper-button-disabled),
-  .swiper:hover .swiper-button-next:not(.swiper-button-disabled) {
-    display: flex;
-  }
-  
-  
-  
-  .swiper-button-prev {
-    left: 0;
-    background: linear-gradient(90deg, rgb(17, 17, 17), transparent);
-  }
-  
-  .swiper-button-prev:hover {
-    left: 0;
-    background: linear-gradient(90deg, black, transparent);
-  }
-  
-  .swiper-button-next {
-    right: 0;
-    background: linear-gradient(270deg, rgb(17, 17, 17), transparent);
-  }
-  
-  .swiper-button-next:hover {
-    right: 0;
-    background: linear-gradient(270deg, black, transparent);
-  }
-  
-  
-  @media (max-width: 767px) {
-  
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: none !important;
-      opacity: 0;
-    }
-  }
-  
+}
