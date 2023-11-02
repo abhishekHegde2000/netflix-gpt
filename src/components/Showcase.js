@@ -33,11 +33,11 @@ const Showcase = ({ data }) => {
               <p className='text-sm md:text-base line-clamp-2 md:line-clamp-2 xl:line-clamp-3'>{overview}</p>
               <div className='action flex gap-3 mt-4'>
                 <Link to={`${PAGE.WATCH}/${contentId}`} className='px-4 md:px-6 py-[5px] font-bold text-md bg-white text-black rounded-[4px] flex items-center justify-center gap-2'>
-                  <span className='icon-fill text-[36px]'>play_arrow</span>
+                  {/* <span className='icon-fill text-[36px]'>play_arrow</span> */}
                   <span>Play</span>
                 </Link>
                 <button className='px-4 md:px-6 py-[5px] font-bold text-md rounded-[4px] flex items-center justify-center gap-2' style={{ background: 'rgba(109, 109, 110, 0.7)' }}>
-                  <span className='icon-line text-[36px]'>info</span>
+                  {/* <span className='icon-line text-[36px]'>info</span> */}
                   <span>More Info</span>
                 </button>
               </div>
@@ -47,7 +47,7 @@ const Showcase = ({ data }) => {
                 <button
                   className='w-9 h-9 rounded-full flex items-center justify-center border border-solid border-gray-500/50 hover:border-gray-400 bg-black/5 hover:bg-black/50'
                   onClick={toggleMute}>
-                  <span className='icon-line text-[18px]'>{isMuted ? 'volume_off' : 'volume_up'}</span>
+                  <span className='icon-line text-[18px]'>{isMuted ? 'volume_off' : 'volume_on'}</span>
                 </button>
               </div>
             </div>

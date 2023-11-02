@@ -19,7 +19,7 @@ const About = () => {
       </p>
 
       <div className='mb-8 text-gray-200'>
-        Github: <a href='https://github.com/okNeeraj/netflix-gpt' className='hover:text-blue-700 ml-3 text-blue-600 text-sm' target='_blank' rel='noreferrer'>NetflixGPT</a>
+        Github: <a href='https://github.com/abhishekHegde2000/netflix-gpt' className='hover:text-blue-700 ml-3 text-blue-600 text-sm' target='_blank' rel='noreferrer'>NetflixGPT</a>
         <br />
         Live Demo: <a href='https://8ttribute.com' target='_blank' className='hover:text-blue-700 ml-3 text-blue-600 text-sm' rel='noreferrer'>Live Demo</a>
         <br></br>
